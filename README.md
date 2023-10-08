@@ -5,7 +5,7 @@
     Ulid type support for HotChocolate
   </p>
   <p>
-	  <a href="https://github.com/pfurmaniak/chocoulid/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/pfurmaniak/chocoulid.svg"></a>
+	  <a href="https://github.com/pfurmaniak/ChocoUlid/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/pfurmaniak/ChocoUlid.svg"></a>
 	  <a href="https://www.nuget.org/packages/ChocoUlid"><img alt="Nuget version" src="https://img.shields.io/nuget/v/ChocoUlid"></a>
 	  <a href="https://www.nuget.org/packages/ChocoUlid"><img alt="NuGet downloads" src="https://img.shields.io/nuget/dt/ChocoUlid"></a> 
   </p>

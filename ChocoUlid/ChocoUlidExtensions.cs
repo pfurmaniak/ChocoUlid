@@ -5,7 +5,7 @@ using System;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class RequestExecutorBuilderExtensions
+    public static class ChocoUlidExtensions
     {
         public static IRequestExecutorBuilder AddUlidType(this IRequestExecutorBuilder builder)
         {

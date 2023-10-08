@@ -17,21 +17,15 @@ public class UlidTypeTests
 
     [Theory]
     [MemberData(nameof(GetUlids))]
-    public void ParseResult_ForValidUlidString_ReturnsStringValueNode(Ulid ulid)
-    {
-        var ulidString = ulid.ToString();
-        var node = _type.ParseResult(ulidString);
-        node.Should().BeOfType<StringValueNode>()
-            .Which.Value.Should().Be(ulidString);
-    }
-
-    [Theory]
-    [MemberData(nameof(GetUlids))]
     public void ParseResult_ForValidUlid_ReturnsStringValueNode(Ulid ulid)
     {
-        var node = _type.ParseResult(ulid);
-        node.Should().BeOfType<StringValueNode>()
-            .Which.Value.Should().Be(ulid.ToString());
+        var ulidString = ulid.ToString();
+        var nodes = new[] { _type.ParseResult(ulid), _type.ParseResult(ulidString) };
+        foreach (var node in nodes)
+        {
+            node.Should().BeOfType<StringValueNode>()
+                .Which.Value.Should().Be(ulidString);
+        }
     }
 
     [Theory]
